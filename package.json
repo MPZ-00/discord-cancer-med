@@ -1,0 +1,19 @@
+{
+  "name": "discord-cancer-med",
+  "author": "Jacob Lee",
+  "publish": false,
+  "dependencies": {
+    "lib": "latest",
+    "moment": "^2.29.1",
+    "discord.js": "^13.3.1",
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "discord-api-types": "^0.24.0",
+    "mongoose": "^6.0.13",
+    "jimp": "^0.16.1",
+    "request-image-size": "^2.2.0",
+    "canvas": "^2.8.0",
+    "@canvas-fonts/arial-bold": "^1.0.3",
+    "autocode-discordjs": "^1.1.0",
+    "mongodb": "^4.3.0"
+  }
+}

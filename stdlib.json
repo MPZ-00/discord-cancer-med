@@ -1,0 +1,228 @@
+{
+    "name": "mpz-00/discord-cancer-med",
+    "timeout": 10000,
+    "connector": false,
+    "events": {
+        "functions/events/discord/bot_mention.js": {
+            "name": "discord.bot_mention"
+        },
+        "functions/events/autocode/self/deployed.js": {
+            "name": "autocode.self.deployed"
+        },
+        "functions/events/discord/commands/ping.js": {
+            "name": "discord.command",
+            "subtype": {
+                "command": "ping"
+            }
+        },
+        "functions/events/discord/commands/status_update.js": {
+            "name": "discord.command",
+            "subtype": {
+                "command": "status-update"
+            }
+        },
+        "functions/events/discord/commands/info.js": {
+            "name": "discord.command",
+            "subtype": {
+                "command": "info"
+            }
+        },
+        "functions/events/discord/commands/test_mention.js": {
+            "name": "discord.command",
+            "subtype": {
+                "command": "test_mention"
+            }
+        },
+        "functions/events/discord/boost.js": {
+            "name": "discord.command",
+            "subtype": {
+                "command": "boost"
+            }
+        },
+        "functions/events/discord/message/button/help/FirstPage.js": {
+            "name": "discord.message.button.interaction",
+            "subtype": {
+                "custom_id": "help-firstpage"
+            }
+        },
+        "functions/events/discord/message/button/help/SecondPage.js": {
+            "name": "discord.message.button.interaction",
+            "subtype": {
+                "custom_id": "help-secondpage"
+            }
+        },
+        "functions/events/discord/message/button/help/exit.js": {
+            "name": "discord.message.button.interaction",
+            "subtype": {
+                "custom_id": "help-exit"
+            }
+        },
+        "functions/events/discord/message/button/help/ThirdPage.js": {
+            "name": "discord.message.button.interaction",
+            "subtype": {
+                "custom_id": "help-thirdpage"
+            }
+        },
+        "functions/events/discord/echo.js": {
+            "name": "discord.command",
+            "subtype": {
+                "command": "echo"
+            }
+        },
+        "functions/events/discord/member-count.js": {
+            "name": "discord.command",
+            "subtype": {
+                "command": "member-count"
+            }
+        },
+        "functions/events/discord/guild.js": {
+            "name": "discord.command",
+            "subtype": {
+                "command": "guild"
+            }
+        },
+        "functions/events/discord/commands/whois.js": {
+            "name": "discord.command",
+            "subtype": {
+                "command": "whois"
+            }
+        },
+        "functions/events/discord/message/create/prefix.js": {
+            "name": "discord.message.create.prefix",
+            "subtype": {
+                "prefix": "cm!"
+            }
+        },
+        "functions/events/discord/leveling-system/ls-level.js": {
+            "name": "discord.command",
+            "subtype": {
+                "command": "ls-level"
+            }
+        },
+        "functions/events/discord/leveling-system/ls-leaderboard.js": {
+            "name": "discord.command",
+            "subtype": {
+                "command": "ls-leaderboard"
+            }
+        },
+        "functions/events/discord/leveling-system/ls-setlvlbg.js": {
+            "name": "discord.command",
+            "subtype": {
+                "command": "ls-setlevelbg"
+            }
+        },
+        "functions/events/discord/leveling-system/ls-blur.js": {
+            "name": "discord.command",
+            "subtype": {
+                "command": "ls-blur"
+            }
+        },
+        "functions/events/discord/leveling-system/ls-boost.js": {
+            "name": "discord.command",
+            "subtype": {
+                "command": "ls-boost"
+            }
+        },
+        "functions/events/discord/leveling-system/ls-help.js": {
+            "name": "discord.command",
+            "subtype": {
+                "command": "ls-help"
+            }
+        },
+        "functions/events/discord/help.js": {
+            "name": "discord.command",
+            "subtype": {
+                "command": "help"
+            }
+        },
+        "functions/events/discord/commands/test_manager_leveling.js": {
+            "name": "discord.command",
+            "subtype": {
+                "command": "test-manager-leveling"
+            }
+        },
+        "functions/events/discord/commands/settings.js": {
+            "name": "discord.command",
+            "subtype": {
+                "command": "settings"
+            }
+        },
+        "functions/events/discord/commands/set-settings.js": {
+            "name": "discord.command",
+            "subtype": {
+                "command": "set-settings"
+            }
+        },
+        "functions/events/discord/command/get-settings.js": {
+            "name": "discord.command",
+            "subtype": {
+                "command": "get-settings"
+            }
+        },
+        "functions/events/discord/command/group-get.js": {
+            "name": "discord.command",
+            "subtype": {
+                "command": "group-get"
+            }
+        },
+        "functions/events/discord/command/group-set.js": {
+            "name": "discord.command",
+            "subtype": {
+                "command": "group-set"
+            }
+        },
+        "functions/events/discord/leveling-system/ls-daily.js": {
+            "name": "discord.command",
+            "subtype": {
+                "command": "ls-daily"
+            }
+        },
+        "functions/events/discord/command/test-path.js": {
+            "name": "discord.command",
+            "subtype": {
+                "command": "test-path"
+            }
+        }
+    },
+    "env": [{
+            "name": "PREFIX",
+            "description": "Prefix of the bot"
+        },
+        {
+            "name": "MONGO_URL",
+            "description": "MongoDB leveling"
+        },
+        {
+            "name": "XP_MIN_VALUE",
+            "description": "minimum xp value to get per message"
+        },
+        {
+            "name": "XP_MAX_VALUE",
+            "description": "maximum xp value to get per message"
+        },
+        {
+            "name": "BOT_MENTION_ENABLED",
+            "description": ""
+        },
+        {
+            "name": "IS_DEBUG",
+            "description": "global Debug Flag"
+        },
+        {
+            "name": "ACTION_LOG",
+            "description": "action-log channel id"
+        },
+        {
+            "name": "ROLE_ADMIN",
+            "description": "Admin-Role ID"
+        },
+        {
+            "name": "LANGUAGE_GERMAN",
+            "description": "german Language ID"
+        },
+        {
+            "name": "MONGO_URL_SRV_SETTINGS",
+            "description": "MongoDB Settings"
+        }
+    ]
+}
